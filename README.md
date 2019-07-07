@@ -6,7 +6,7 @@ Headings: SedgwickAveDisplay-Regular
 Text: MontserratAlternates
 
 <!-- colors -->
-Background: #ffffff
+Background: #ffffff<br>
 Headings: #663300
 Headingbackground: #ffbc86
 Text: #707070
