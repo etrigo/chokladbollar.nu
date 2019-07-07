@@ -10,7 +10,7 @@ Background: #ffffff<br>
 Headings: #663300<br>
 Headingbackground: #ffbc86<br>
 Text: #707070<br>
-Puff: #ffbc86<br>
+Puff: #00C9AC<br>
 Pufftext: #FFFFFF<br>
 Lines & Borders: #663300<br>
 

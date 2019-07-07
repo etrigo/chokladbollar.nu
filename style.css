@@ -1,9 +1,132 @@
+/* remove automatic margin*/
+* {
+  margin: 0;
+}
+
+/* fonts, text & headings */
 @font-face {
-  font-family: sedgwick;
+  font-family: 'Sedgwick Ave Display', cursive;
   src: url(https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display&display=swap);
 }
 
+/* styling for header*/
 h1 {
-  font-family: sedgwick;
-  font-size: 5vw;
+  font-family: Sedgwick Ave Display;
+  font-size: 3vw;
+  text-align: center;
+  padding: 30px;
+}
+#strongBalls {
+  font-size: 8vw;
+}
+
+header {
+  background-color: #FFBC86;
+  border-bottom: 5px solid #663300;
+}
+
+/* styling for headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #663300;
+}
+
+
+/* styling for imgage */
+figure, Img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  margin: auto;
+  padding: 0px:
+}
+
+
+/* Style tab section */
+/* style the tab */
+.tab {
+  overflow: hidden;
+  border: none;
+  background-color: #FFBC86;
+  text-align: center;
+}
+
+
+/* style the buttons - Lägga till 50% bredd? */
+.tab button {
+  float: left;
+  /*text-align: center;*/
+  /*display: inline-block;*/
+  margin: auto;
+  width: 50%;
+  max-width: 250px;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px; /* ändra till vw*/
+  border-bottom: 5px solid #FFBC86;
+}
+
+
+/* background color for buttons on hover - välj nu färg...*/
+.tab button:hover {
+  background-color: #00C9AC;
+  border-bottom: 5px solid #00C9AC;
+}
+
+
+/* create active tab link */
+.tab button:active {
+  border-bottom: 5px solid #663300;
+  color: #663300;
+}
+
+
+/* style tab content */
+.tabcontent {
+  /*display: none;*/
+  padding:  6px 12px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+
+
+/* fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+
+/* styling for footer*/
+h4 {
+  font-family: Sedgwick Ave Display;
+  font-size: 2vw;
+  text-align: center;
+  padding: 30px;
+}
+
+footer {
+  border-top: 5px solid #663300;
+  /*position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;*/
+
+}
+
+#footerOne {
+  background-color: #DFE0DF;
+  text-align: center;
+}
+
+#footerTwo {
+  background-color: #FFBC86;
 }

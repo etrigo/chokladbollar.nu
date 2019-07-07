@@ -2,19 +2,57 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="Script.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <style>
-  h1 {
-    font-family: 'Sedgwick Ave Display', cursive;
-  }
-  </style>
 </head>
 <body>
-  <head>
-    <h1>Världens Godaste Chokladbollar.nu</h1>
-  </head>
+  <header>
+    <h1>Världens Godaste <br> <strong id="strongBalls"> Chokladbollar.nu</strong></h1>
+  </header>
+  <figure id="mainImg">
+    <img src="/img/chocolate-balls-824638_1920.jpg" alt="Ops, här skulle varit en bild på världens godaste chokladbollar!">
+  </figure>
+  <section>
+    <div id="tagLine">
+      <p>Superenkla och supergoda Chokladbollar</p>
+    </div>
+    <div id="facts"><p>30 min</p></div>
+    <div id="facts"><p>30 min</p></div>
+    <div class="tab">
+      <button class="tablinks" onclick="openContent(event, 'Ingredients')">Ingridienser</button>
+      <button class="tablinks" onclick="openContent(event, 'HowTo')">Gör så här</button>
+    </div>
+    <div id="Ingredients" class="tabcontent">
+      <h3>Ingridienser</h3>
+      <p>Yada yada yada</p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+    <div id="HowTo" class="tabcontent">
+      <h3>Gör så här</h3>
+      <p>Yadaho yadahoo</p>
+    </div>
+  </section>
+  <footer>
+    <section id="footerOne">
+      <form action="add url"> <!--add url-->
+        <input type="button" class="copyUrl" name="copyURL"> <!--add text on button-->
+        <input type="text" class="readUrl" name="readUrl" value="https://chokladbollar.nu/" readonly>
+      </form>
+    </section>
+    <section id="footerTwo">
+      <div>
+        <h4>En sajt och ett mellnmål från en Björn</h4>
+      </div>
+    </section>
+  </footer>
 </body>
 </html>
