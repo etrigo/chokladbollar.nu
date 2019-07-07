@@ -1,0 +1,9 @@
+@font-face {
+  font-family: sedgwick;
+  src: url(https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display&display=swap);
+}
+
+h1 {
+  font-family: sedgwick;
+  font-size: 5vw;
+}
