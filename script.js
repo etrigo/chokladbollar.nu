@@ -12,3 +12,11 @@ function openContent(evt, contentName) {
   document.getElementById(contentName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+// copy url script
+function copyFunction() {
+  var copyText = document.getElementById("siteUrl");
+  copyText.select();
+  document.execCommand("copy");
+  alert("Se där ja, " + copyText.value + ", är kopierad. Dela var du vill :)");
+}
