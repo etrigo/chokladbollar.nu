@@ -15,38 +15,36 @@
   <figure id="mainImg">
     <img src="/img/chocolate-balls-824638_1920.jpg" alt="Ops, här skulle varit en bild på världens godaste chokladbollar!">
   </figure>
-  <section>
+  <section id="mainSec">
     <div id="tagLine">
-      <p>Superenkla och supergoda Chokladbollar</p>
+      <h2>Superenkla och supergoda Chokladbollar</h2>
     </div>
-    <div id="facts"><p>30 min</p></div>
-    <div id="facts"><p>30 min</p></div>
+    <div class="facts">
+      <p><strong>30 min</strong></p>
+      <p><strong>20 st</strong></p>
+    </div>
     <div class="tab">
-      <button class="tablinks" onclick="openContent(event, 'Ingredients')">Ingridienser</button>
-      <button class="tablinks" onclick="openContent(event, 'HowTo')">Gör så här</button>
+      <button class="tablinks" onclick="openContent(event, 'ingredients')"><h2>Ingridienser</h2></button>
+      <button class="tablinks" onclick="openContent(event, 'howTo')"><h2>Gör så här</h2></button>
     </div>
-    <div id="Ingredients" class="tabcontent">
-      <h3>Ingridienser</h3>
+    <div id="ingredients" class="tabcontent">
+      <!--<h3>Ingridienser</h3>-->
       <p>Yada yada yada</p>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
     </div>
-    <div id="HowTo" class="tabcontent">
-      <h3>Gör så här</h3>
+    <div id="howTo" class="tabcontent">
+      <!--<h3>Gör så här</h3>-->
       <p>Yadaho yadahoo</p>
     </div>
   </section>
   <footer>
     <section id="footerOne">
-      <form action="add url"> <!--add url-->
-        <input type="button" class="copyUrl" name="copyURL"> <!--add text on button-->
-        <input type="text" class="readUrl" name="readUrl" value="https://chokladbollar.nu/" readonly>
-      </form>
+      <div>
+        <p>Kopiera och dela</p>
+        <form> <!--add url-->
+          <!--<input type="button" value="Kopiera länk" class="copyUrl" onclick="this.copy(herj)" name="copyUrl">-->
+          <input type="text" class="readUrl" name="readUrl" onclick="this.select()" value="https://chokladbollar.nu/" readonly>
+        </form>
+      </div>
     </section>
     <section id="footerTwo">
       <div>
