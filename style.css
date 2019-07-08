@@ -34,6 +34,12 @@ p {font-size: 1em;}
   font-size: 8vw;
 }
 
+/* font colors*/
+h1, h2, h3, h4, h5, h6 {color: #663300;}
+p {color: #707070;}
+.facts p {color: #ffffff;}
+.tablinks h3 {color: #ffffff;}
+
 /* styling for header*/
 h1 {
   text-align: center;
@@ -45,12 +51,6 @@ header {
   background-color: #FFBC86;
   border-bottom: 5px solid #663300;
 }
-
-/* styling for headings */
-h1, h2, h3, h4, h5, h6 {
-  color: #663300;
-}
-
 
 
 /* styling for imgage */
@@ -81,7 +81,6 @@ figure, Img {
   max-width: 800px;
   text-align: center;
   background-color: #00C9AC;
-  color: #fff;
   border-radius: 10px 10px 0 0;
 }
 
@@ -122,7 +121,7 @@ figure, Img {
 
 /* background color for buttons on hover - välj nu färg...*/
 .tab button:hover {
-  background-color: #00C9AC;
+  /*background-color: #00C9AC;*/
   border-bottom: 5px solid #00C9AC;
 }
 
@@ -137,9 +136,7 @@ figure, Img {
 /* create focused tab link */
 .tab button:focus {
   border-bottom: 5px solid #663300;
-  color: #663300;
 }
-
 
 /* style tab content */
 .tabcontent {
@@ -147,7 +144,7 @@ figure, Img {
   padding:  6px 12px;
   -webkit-animation: fadeEffect 1s;
   animation: fadeEffect 1s;
-  min-height: 250px;
+  min-height: 425px;
 }
 
 #howTo {
@@ -167,6 +164,37 @@ figure, Img {
 }
 
 
+li {
+  overflow: auto;
+  width: 100%;
+  margin: auto;
+  max-width: 800px;
+}
+
+li .pl {
+  float: left;
+  width: 50%;
+  text-align: left;
+  padding: 10px 0;
+}
+
+.pl {
+  font-weight: bold;
+}
+
+
+li .pt {
+  padding: 10px 0;
+}
+
+.pt {
+  font-weight: bold;
+  padding: 10px;
+}
+ul {
+  padding: 10px;
+}
+
 /* styling for footer*/
 h4 {
   font-size: 1.5vw;
@@ -175,12 +203,7 @@ h4 {
 }
 
 footer {
-  border-top: 5px solid #663300;
-  /*position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;*/
-
+  border-top: 5px solid #00C9AC;
 }
 
 #footerOne {
