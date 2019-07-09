@@ -246,6 +246,9 @@ footer {
   text-align: center;
 }
 
+#footerOne form input:focus {
+  outline: none;
+}
 
 #footerTwo {
   background-color: #FFBC86;
