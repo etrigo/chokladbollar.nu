@@ -1,6 +1,6 @@
 // tabs script
 function openContent(evt, contentName) {
-  var i, tabcontent, tablinks;
+  var tabcontent, i, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
