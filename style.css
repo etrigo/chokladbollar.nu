@@ -64,6 +64,12 @@ h1 {
   padding: 30px;
 }
 
+/* witdh for main elements */
+#mainSec, .facts, .tab, li {
+  width: 100%;
+  max-width: 850px;
+  margin: auto;
+}
 
 header {
   background-color: #FFBC86;
@@ -80,11 +86,11 @@ figure, Img {
   padding: 0px;
 }
 
-#mainSec {
+/*#mainSec {
   width: 100%;
   max-width: 800px;
   margin: auto;
-}
+}*/
 
 
 #tagLine {
@@ -95,8 +101,8 @@ figure, Img {
 .facts {
   overflow: auto;
   width: 50%;
-  margin: auto;
-  max-width: 800px;
+  /*margin: auto;
+  max-width: 800px;*/
   text-align: center;
   background-color: #00C9AC;
   border-radius: 10px 10px 0 0;
@@ -113,8 +119,8 @@ figure, Img {
 /* style the tab */
 .tab {
   overflow: auto;
-  width: 100%;
-  max-width: 800px;
+  /*width: 100%;*/
+  /*max-width: 800px;*/
   border: none;
   background-color: #FFBC86;
 }
@@ -137,9 +143,8 @@ figure, Img {
 }
 
 
-/* background color for buttons on hover - välj nu färg...*/
+/* background color for buttons on hover*/
 .tab button:hover {
-  /*background-color: #00C9AC;*/
   border-bottom: 5px solid #00C9AC;
 }
 
@@ -147,7 +152,6 @@ figure, Img {
 /* create active tab link */
 .tab button:active {
   border-bottom: 5px solid #663300;
-  /*color: #663300;*/
 }
 
 
@@ -184,9 +188,9 @@ figure, Img {
 
 li {
   overflow: auto;
-  width: 100%;
-  margin: auto;
-  max-width: 800px;
+  /*width: 100%;*/
+  /*margin: auto;*/
+  /*max-width: 800px;*/
 }
 
 li .pl {
@@ -254,6 +258,48 @@ footer {
   background-color: #FFBC86;
 }
 
+.fab {
+  color: #663300;
+  font-size: 75px;
+  padding: 10px;
+}
+.far {
+  color: #FFBC86;
+  font-size: 85px;
+  padding: 10px;
+  -webkit-animation: rotate-scale-down 0.95s linear 5s 3 alternate both;
+  animation: rotate-scale-down 1.15s linear 5s 2 alternate both;
+}
+
+@-webkit-keyframes .far {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+            transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(0.5) rotateZ(180deg);
+            transform: scale(0.5) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+            transform: scale(1) rotateZ(360deg);
+  }
+}
+@keyframes rotate-scale-down {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+            transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(0.5) rotateZ(180deg);
+            transform: scale(0.5) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+            transform: scale(1) rotateZ(360deg);
+  }
+}
+
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -269,8 +315,8 @@ footer {
   -webkit-animation-name: fadeIn; /* Fade in the background */
   -webkit-animation-duration: 0.4s;
   animation-name: fadeIn;
-  animation-duration: 0.4s
 }
+
 
 /* Modal Content */
 .modal-content {
@@ -279,37 +325,37 @@ footer {
   background-color: #fefefe;
   width: 100%;
   -webkit-animation-name: slideIn;
-  -webkit-animation-duration: 0.4s;
+  -webkit-animation-duration: 0.8s;
   animation-name: slideIn;
-  animation-duration: 0.4s
+  animation-duration: 0.8s
 }
 
 /* The Close Button */
 .close {
   color: white;
   float: right;
-  font-size: 28px;
+  font-size: 40px;
   font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-  color: #000;
+  color: #663300;
   text-decoration: none;
   cursor: pointer;
 }
 
 .modal-header {
-  padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
+  padding: 30px;
+  background-color: #FFBC86;
+  border-top: 5px solid #663300;
 }
 
 .modal-body {padding: 2px 16px;}
 
 .modal-footer {
   padding: 2px 16px;
-  background-color: #5cb85c;
+  background-color: #FFBC86;
   color: white;
 }
 

@@ -13,15 +13,9 @@ function openContent(evt, contentName) {
   evt.currentTarget.className += " active";
 }
 
-// copy url script
-function copyFunction() {
-  var copyText = document.getElementById("siteUrl");
-  copyText.select();
-  document.execCommand("copy");
-  /*alert("Se där ja, " + copyText.value + ", är kopierad. Dela var du vill :)");*/
-}
 
-window.onload = function () {
+
+window.onload = function() {
   // Get the modal
   var modal = document.getElementById("myModal");
 
@@ -33,6 +27,8 @@ window.onload = function () {
 
   // When the user clicks the button, open the modal 
   urlField.onclick = function() {
+    urlField.select();
+    document.execCommand("copy");
     modal.style.display = "block";
   }
 
