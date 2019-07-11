@@ -64,7 +64,7 @@ p {color: #707070;}
   position: fixed;
   z-index: 1;
   top: 0;
-  left: 0;
+  left: -5px;
   background-color: #111;
   overflow-x: hidden;
   border-right: 5px solid #663300;
@@ -150,6 +150,10 @@ figure, Img {
   object-fit: cover;
   margin: auto;
   padding: 0px;
+}
+
+#endResult {
+  padding: 0 10px;
 }
 
 
