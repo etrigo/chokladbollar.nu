@@ -14,7 +14,7 @@ function openContent(evt, contentName) {
 }
 
 
-
+// copy url and get modal
 window.onload = function() {
   // Get the modal
   var modal = document.getElementById("myModal");

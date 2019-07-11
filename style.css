@@ -10,7 +10,7 @@ h2, h3, h4, h5, h6 {font-family: Montserrat Alternates;}
 p {font-family: Montserrat Alternates;}
 
 
-/* font size */
+/* font size on different media */
 @media screen and (min-width: 993px) {
   h1 {font-size: 2vw;}
   h2 {font-size: 1.75vw;}
@@ -51,18 +51,19 @@ p {font-family: Montserrat Alternates;}
   }
 }
 
-
 /* font colors*/
 h1, h2, h3, h4, h5, h6 {color: #663300;}
 p {color: #707070;}
 .facts p {color: #ffffff;}
 .tablinks h3 {color: #ffffff;}
 
+
 /* styling for header*/
 h1 {
   text-align: center;
   padding: 30px;
 }
+
 
 /* witdh for main elements */
 #mainSec, .facts, .tab, li {
@@ -71,6 +72,8 @@ h1 {
   margin: auto;
 }
 
+
+/* header styling */
 header {
   background-color: #FFBC86;
   border-bottom: 5px solid #663300;
@@ -86,23 +89,18 @@ figure, Img {
   padding: 0px;
 }
 
-/*#mainSec {
-  width: 100%;
-  max-width: 800px;
-  margin: auto;
-}*/
 
-
+/* Tagline section */
 #tagLine {
   text-align: center;
   padding: 20px 0;
 }
 
+
+/* fact tabs */
 .facts {
   overflow: auto;
   width: 50%;
-  /*margin: auto;
-  max-width: 800px;*/
   text-align: center;
   background-color: #00C9AC;
   border-radius: 10px 10px 0 0;
@@ -115,18 +113,14 @@ figure, Img {
   padding: 10px 0;
 }
 
+
 /* Style tab section */
-/* style the tab */
 .tab {
   overflow: auto;
-  /*width: 100%;*/
-  /*max-width: 800px;*/
   border: none;
   background-color: #FFBC86;
 }
 
-
-/* style the buttons - Lägga till 50% bredd? */
 .tab button {
   float: left;
   margin: auto;
@@ -137,44 +131,30 @@ figure, Img {
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
-  font-size: 17px; /* ändra till vw*/
+  font-size: 17px;
   border-bottom: 5px solid #FFBC86;
   text-align: center;
 }
 
-
-/* background color for buttons on hover*/
 .tab button:hover {
   border-bottom: 5px solid #00C9AC;
 }
 
-
-/* create active tab link */
 .tab button:active {
   border-bottom: 5px solid #663300;
 }
 
-
-/* create focused tab link */
 .tab button:focus {
   border-bottom: 5px solid #663300;
 }
 
-/* style tab content */
 .tabcontent {
-  /*display: none;*/
   padding:  6px 12px;
   -webkit-animation: fadeEffect 1s;
   animation: fadeEffect 1s;
   min-height: 475px;
 }
 
-#howTo {
-  display: none;
-}
-
-
-/* fade in tabs */
 @-webkit-keyframes fadeEffect {
   from {opacity: 0;}
   to {opacity: 1;}
@@ -185,12 +165,12 @@ figure, Img {
   to {opacity: 1;}
 }
 
+#howTo {
+  display: none;
+}
 
 li {
   overflow: auto;
-  /*width: 100%;*/
-  /*margin: auto;*/
-  /*max-width: 800px;*/
 }
 
 li .pl {
@@ -204,7 +184,6 @@ li .pl {
   font-weight: bold;
 }
 
-
 li .pt {
   padding: 10px 0 5px 0;
 }
@@ -216,6 +195,7 @@ li .pt {
 ul {
   padding: 10px;
 }
+
 
 /* styling for footer*/
 h4 {
@@ -258,6 +238,55 @@ footer {
   background-color: #FFBC86;
 }
 
+
+/* The Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+}
+
+.modal-content {
+  position: fixed;
+  bottom: 0;
+  background-color: #fefefe;
+  width: 100%;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.8s;
+  animation-name: slideIn;
+  animation-duration: 0.8s
+}
+
+@-webkit-keyframes slideIn {
+  from {bottom: -300px; opacity: 0} 
+  to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+  from {bottom: -300px; opacity: 0}
+  to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
 .fab {
   color: #663300;
   font-size: 75px;
@@ -285,6 +314,7 @@ footer {
             transform: scale(1) rotateZ(360deg);
   }
 }
+
 @keyframes rotate-scale-down {
   0% {
     -webkit-transform: scale(1) rotateZ(0);
@@ -300,37 +330,6 @@ footer {
   }
 }
 
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  -webkit-animation-name: fadeIn; /* Fade in the background */
-  -webkit-animation-duration: 0.4s;
-  animation-name: fadeIn;
-}
-
-
-/* Modal Content */
-.modal-content {
-  position: fixed;
-  bottom: 0;
-  background-color: #fefefe;
-  width: 100%;
-  -webkit-animation-name: slideIn;
-  -webkit-animation-duration: 0.8s;
-  animation-name: slideIn;
-  animation-duration: 0.8s
-}
-
-/* The Close Button */
 .close {
   color: white;
   float: right;
@@ -357,25 +356,4 @@ footer {
   padding: 2px 16px;
   background-color: #FFBC86;
   color: white;
-}
-
-/* Add Animation */
-@-webkit-keyframes slideIn {
-  from {bottom: -300px; opacity: 0} 
-  to {bottom: 0; opacity: 1}
-}
-
-@keyframes slideIn {
-  from {bottom: -300px; opacity: 0}
-  to {bottom: 0; opacity: 1}
-}
-
-@-webkit-keyframes fadeIn {
-  from {opacity: 0} 
-  to {opacity: 1}
-}
-
-@keyframes fadeIn {
-  from {opacity: 0} 
-  to {opacity: 1}
 }
