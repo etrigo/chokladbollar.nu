@@ -23,7 +23,7 @@ window.onload = function() {
   var urlField = document.getElementById("siteUrl");
 
   // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
+  var span = document.getElementsByClassName("closeModal")[0];
 
   // When the user clicks the button, open the modal 
   urlField.onclick = function() {
@@ -43,4 +43,13 @@ window.onload = function() {
       modal.style.display = "none";
     }
   }
+}
+
+// side nav script
+function openNav() {
+  document.getElementById("mySideNav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySideNav").style.width = "0";
 }

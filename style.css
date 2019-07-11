@@ -57,6 +57,69 @@ p {color: #707070;}
 .facts p {color: #ffffff;}
 .tablinks h3 {color: #ffffff;}
 
+/* styling side menu */
+.sideNav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  border-right: 5px solid #663300;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sideNav a {
+  padding: 8px 8px 8px 32px;
+  display: block;
+  transition: 0.3s;
+}
+
+.sideNav a:hover {
+  color: #f1f1f1;
+}
+
+.sideNav .closeNav {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  margin-left: 50px;
+  color: white;
+  float: right;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+  .sideNav {padding-top: 15px;}
+  .sideNav a {font-size: 18px;}
+}
+
+.navHeader {
+  background-color: #FFBC86;
+}
+
+.navBody {
+  height: 400px;
+  background-color: #fff;
+}
+
+.navFooter {
+  background-color: #FFBC86;
+}
+
+
+.closeNav:hover,
+.closeNav:focus {
+  color: #663300;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
 /* styling for header*/
 h1 {
@@ -254,6 +317,7 @@ footer {
   -webkit-animation-name: fadeIn;
   -webkit-animation-duration: 0.4s;
   animation-name: fadeIn;
+  animation-duration: 0.8s;
 }
 
 .modal-content {
@@ -264,7 +328,7 @@ footer {
   -webkit-animation-name: slideIn;
   -webkit-animation-duration: 0.8s;
   animation-name: slideIn;
-  animation-duration: 0.8s
+  animation-duration: 0.8s;
 }
 
 @-webkit-keyframes slideIn {
@@ -330,15 +394,15 @@ footer {
   }
 }
 
-.close {
+.closeModal {
   color: white;
   float: right;
   font-size: 40px;
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.closeModal:hover,
+.closeModal:focus {
   color: #663300;
   text-decoration: none;
   cursor: pointer;

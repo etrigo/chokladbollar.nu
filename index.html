@@ -37,7 +37,22 @@
 <body>
   <header>
     <h1>Världens Godaste <br> <strong id="strongBalls"> Chokladbollar.nu</strong></h1>
+    <span onclick="openNav()">&#9776; open</span>
   </header>
+  <nav>
+    <div id="mySideNav" class="sideNav">
+          <!--<div class="navContent">-->
+            <div class="navHeader">
+              <span class="closeNav" onclick="closeNav()">&times;</span>
+              <h4 class="navTitle">Hello World!</h4> </div>
+            <div class="navBody">
+              <p>One fine body…</p>
+            </div>
+            <div class="navFooter"> </div>
+          </div>
+        <!--</div>-->
+    </div>
+  </nav>
   <figure id="mainImg">
     <img src="/img/chokladbollar.jpg" alt="Ops, här skulle varit en bild på världens godaste chokladbollar!">
   </figure>
@@ -84,7 +99,7 @@
         <div id="myModal" class="modal">
           <div class="modal-content">
             <div class="modal-header">
-              <span class="close">&times;</span>
+              <span class="closeModal">&times;</span>
               <h2>Kopierad!</h2>
             </div>
             <div class="modal-body">
