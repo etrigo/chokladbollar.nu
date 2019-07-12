@@ -143,8 +143,8 @@ header {
 }
 
 
-/* styling for imgage */
-figure, Img {
+/* styling for main imgage */
+figure img {
   width: 100%;
   max-height: 300px;
   object-fit: cover;
@@ -152,8 +152,17 @@ figure, Img {
   padding: 0px;
 }
 
+/* styling for main imgage */
 #endResult {
-  padding: 0 10px;
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  margin: auto;
+  vertical-align: bottom;
+  border-top: 5px solid #00C9AC;
+  border-left: 5px solid #00C9AC;
+  border-right: 5px solid #00C9AC;
+  border-radius: 20px 20px 0 0;  
 }
 
 
@@ -216,7 +225,7 @@ figure, Img {
 }
 
 .tabcontent {
-  padding:  6px 12px;
+  padding:  0 12px;
   -webkit-animation: fadeEffect 1s;
   animation: fadeEffect 1s;
   min-height: 475px;

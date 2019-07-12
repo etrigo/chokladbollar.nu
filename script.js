@@ -45,6 +45,7 @@ window.onload = function() {
   }
 }
 
+
 // side nav script
 function openNav() {
   document.getElementById("mySideNav").style.width = "250px";
