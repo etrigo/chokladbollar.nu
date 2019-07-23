@@ -15,9 +15,19 @@ function openContent(evt, contentName) {
 
 
 // copy url and open modal
-function copyFunction() {
+/*function copyFunction() {
   document.getElementById("siteUrl").select();
+  document.execCommand("copy");*/
+
+function copyFunction() {
+  var siteUrl = document.createElement("input"),
+    text = window.location.href;
+  
+  document.body.appendChild(siteUrl);
+  siteUrl.value = text;
+  siteUrl.select();
   document.execCommand("copy");
+  document.body.removeChild(siteUrl);
   var modal = document.getElementById("myModal");
   var span = document.getElementsByClassName("closeModal")[0];
   modal.style.display = "block";
